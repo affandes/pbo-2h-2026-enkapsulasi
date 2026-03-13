@@ -1,7 +1,13 @@
 from book import Book
 
-b1 = Book(1, "Learn Python", "Affan")
-b2 = Book(2, "Mastering OOP", "Budi")
+# buat objek buku
+b1 = Book(1234, "Learn Python", "Affan")
+b2 = Book(2987, "Mastering OOP", "Budi")
 
-print(b1.title)
-print(b2.title)
+print(b1.get_title())
+print(b2.get_title())
+
+b1.set_title("US")
+
+print(b1.get_title())
+print(b2.get_title())
